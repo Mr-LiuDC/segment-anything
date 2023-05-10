@@ -89,7 +89,9 @@ sam.to(device=device)
 predictor = SamPredictor(sam)
 predictor.set_image(image)
 
-input_point = np.array([[512, 436]])
+# 南瓜 233,233
+# 烧饼 257,709
+input_point = np.array([[257, 709]])
 input_label = np.array([1])
 plt.figure(figsize=(10, 10))
 plt.imshow(image)
